@@ -124,7 +124,7 @@ public class LoadBalancerSupport extends AbstractLoadBalancerSupport<Google>  {
             throw new CloudException(e);
         }
     }
-
+/*
 	private void releaseLoadBalancerIp(@Nonnull LoadBalancer lb) throws CloudException, InternalException {
 	    
         try {
@@ -138,7 +138,7 @@ public class LoadBalancerSupport extends AbstractLoadBalancerSupport<Google>  {
             throw new CloudException(e);
         }
 	}
-	
+*/	
     @Override
     public void removeLoadBalancer(@Nonnull String loadBalancerId) throws CloudException, InternalException {
         APITrace.begin(provider, "LB.removeLoadBalancer");
